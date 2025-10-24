@@ -17,7 +17,6 @@ namespace MiniHtmlServer
         public void Start()
         {
             _listener = new HttpListener();
-            // BURASI YANLIŞTI → "server" yok, _listener kullanmalısın
             _listener.Prefixes.Add($"http://{_config.Domain}:{_config.Port}/");
             _listener.Start();
             Receive();
@@ -56,3 +55,4 @@ namespace MiniHtmlServer
         }
     }
 }
+
