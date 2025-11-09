@@ -1,0 +1,296 @@
+﻿.chats {
+    color: #AFAFAF;
+}
+
+.purple {
+    color: #5856d6;
+}
+
+.icon-star {
+    width: 15px;
+    height: 15px;
+}
+
+.icon-arrow {
+    margin-top: 2px;
+    width: 15px;
+    height: 12px;
+}
+
+body {
+    display: flex;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #212121;
+}
+
+.Left_Menu {
+    width: 240px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #181818;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    color: white;
+    flex-shrink: 0;
+}
+
+svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.Left_Menu__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0px 15px;
+}
+
+.functions__main {
+    margin-top: 25px;
+}
+
+.Left_Menu__functions li,
+.Left_Menu__functions__projects,
+.Left_Menu__chats li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 6px;
+    margin: 0px 8px;
+}
+
+.Left_Menu__functions__other,
+.Left_Menu__chats,
+.Left_Menu__functions__projects {
+    margin-top: 25px;
+}
+
+    .functions__main li p,
+    .functions__other__list li p,
+    .Left_Menu__functions__projects p {
+        margin-left: 8px;
+        font-size: 13px;
+    }
+
+.Left_Menu__functions__projects {
+    display: flex;
+    align-items: center;
+}
+
+.Left_Menu__chats:first-child p {
+    color: #AFAFAF;
+    font-size: 13px;
+}
+
+.Left_Menu__footer {
+    position: absolute;
+    bottom: 0;
+}
+
+#arrow {
+    margin-left: auto;
+}
+
+.Left_Menu__account {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    padding: 8px 12px 8px 10px;
+    margin: 0 8px;
+}
+
+.account__content__name {
+    font-size: 14px;
+}
+
+.account__content__plan {
+    font-size: 11px;
+}
+
+.Left_Menu__account__img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.main {
+    font-family: "Noto Sans";
+    color: white;
+    flex: 1;
+    min-width: 0;
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 0 20px;
+}
+
+.header__gpt-model {
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+    .header__gpt-model svg {
+        margin-left: 7px;
+        width: 17px;
+        height: 17px;
+    }
+
+.main__search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 628px;
+    margin: auto;
+    min-height: calc(100vh - 29px);
+}
+
+.main__search__title {
+    text-align: center;
+    font-size: 22px;
+}
+
+.main__search__service {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #303030;
+    border-radius: 28px;
+    margin-top: 25px;
+}
+
+    .main__search__service button,
+    .serch__service__talk {
+        max-height: 20px;
+    }
+
+.serch__service__talk {
+    margin-left: auto;
+}
+
+.search__service__search-string::placeholder {
+    font-size: 14px;
+}
+
+.search__service__search-string {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 18px;
+    .search__talk__conversation
+
+{
+    position: relative;
+    margin-left: 12px;
+}
+
+.search__talk__conversation ::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #3e3e3e;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+
+.Left_Menu, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+    input::-ms-clear {
+        display: none;
+    }
+
+    button, input[type="submit"] {
+        display: inline-block;
+        box-shadow: none;
+        background-color: transparent;
+        background: none;
+        cursor: pointer;
+    }
+
+        input:focus, input:active,
+        button:focus, button:active {
+            outline: none;
+        }
+
+        button::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+input[type='file'] {
+    max-width: 100%;
+}
